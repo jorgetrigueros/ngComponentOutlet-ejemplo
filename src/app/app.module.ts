@@ -4,15 +4,26 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CineComponent } from './cine/cine.component';
+import { TeatroComponent } from './teatro/teatro.component';
+import { MusicaComponent } from './musica/musica.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CineComponent,
+    TeatroComponent,
+    MusicaComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
+  ],
+  entryComponents: [
+    CineComponent,
+    TeatroComponent,
+    MusicaComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
